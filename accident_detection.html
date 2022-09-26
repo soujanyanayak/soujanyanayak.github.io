@@ -78,42 +78,17 @@
             <div class="col-md-12" >
                 <div class="written_text">
                     <!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
-                    <h1 class="written_text">Vehicle Tracking</h1>
+                    <h1 class="written_text">Accident Detection</h1>
                     <p>
-                        We need to track vehicles to understand the accidents possibility. Among all the objects detected, we retain only the correctly detected vehicles. This can be achieved by evaluating the class ids and scores from the previous step. Post identifying the vehicles in video frames, we use Centroid Tracking algorithm to track the vehicles in each subsequent video frames.
-                    <br><br>
-                    Centroid Tracking algorithm is based on Euclidean distance between centroids of two objects, which is our system are vehicles.
-                    <br><br>
-                    1.  The Centroid is determined by identifying the intersection point of the lines passing from midpoint of the boundary box that was generated in Step 1.
-                    <br>
-                    2.	 Next the Euclidean distance is calculated between vehicles in the frames.
-                    <br>
-                    3.	 This process is repeated for each frame and shortest distance is identified. 
-                    <br>
-                    4.	 Incase previously identified vehicles are no longer in the frame, then remove the from the set and if there are new vehicles in the frame, then add them to our object set.
-                    <br><br>
-                    This distance between two objects will be used to predict the accidents between those two vehicles. This prediction depends on:
-                    <br>
-                    1.	Overlapping bounding boxes of vehicles: Before any collision between two vehicles, there are high chances that their bounding boxes will overlap. This can give some probability but doesn’t confirm that it is a collision as every overlap need not be a collision.
-                    <br>“Consider a, b to be the bounding boxes of two vehicles A and B. Let x, y be the coordinates of the centroid of a given vehicle and let α, β be the width and height of the bounding box of a vehicle respectively. At any given instance, the bounding boxes of A and B overlap, if the condition shown in Eq. 1 holds true”. 
-                    <br>
-                    <img src="images/eq1.png" alt="src:" width="600" height="50">
-                    <br>
-                    2.	Trajectory of the vehicles and their angle of intersection: This is determined by measuring the difference between the centroid of the vehicles in each video frame which generates a 2D vector.
-                    “ We then determine the magnitude of the vector, µ, as shown in Eq. 2.”
-                    <br>
-                    <img src="images/eq2.png" alt="src:" width="600" height="50">
-                    <br>
-                    The angle of intersection for two vectors μ_1 and μ_2 of two vehicles using Eq. 3
-                    <br>
-                    <img src="images/eq3.png" alt="src:" width="600" height="50">
-                    <br> 
-                    3.	Change in speed of the vehicles: We calculate the speed of the vehicles using Eq. 4
-                    <br>
-                    <img src="images/eq4.png" alt="src:" width="600" height="50">
-                    <br> 
-                    where c2 and c1 are centroids of the vehicles in subsequent frames and the Interval is the time.
-                    <br> 
+                        The system identifies if the vehicles are overlapping. To avoid the false accident detections, multiple parameters need to be considered. 
+                        <br><br>
+                        <b>Acceleration (α)</b>: Change in speed is measured to detect collision from predefined conditions. We need to determine average change in speed for 15 frames before overlapping.
+                        <br><br>
+                        <b>Trajectory(β)</b>: Trajectory anomaly is measured from the angle of trajectories of the vehicles. This is determined by, if θ ∈(θ_L,θ_H ) predetermined set of conditions of θ
+                        <br><br>
+                        <b>Change in Angle (δ)</b>: Measure the angle of the vehicle with its own trajectories in five frames. During accidents, there are chances of the vehicle changing its alignment with respect to its previous trajectory. So, Change is angle can be used to eliminate false positives of the detection. The change in angle is determined from predefined set of conditions.
+                        <br><br>
+                        All the three individual thresholds are used to generate a score between 0 and 1. It the score is greater than 0.5, then it is an accident and rest is discarded.
                     </p>
                     <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
                 </div>
@@ -121,6 +96,8 @@
 
         </div>
     </div>
+    <a href="#" class="previous">&laquo; Previous</a>
+    <a href="#" class="next">Next &raquo;</a>
     <br>
     <br>
     <br>
@@ -132,7 +109,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                   <p class="copyright_text">© 2019 All Rights Reserved. <a href="https://html.design">Free Website Templates</a></p>
+                   <p class="copyright_text"></p>
                 </div>
             </div>
         </div>
