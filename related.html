@@ -87,7 +87,10 @@
                                     <a class="nav-link" href="challenges.html">Challenges</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="conclusion.html">Future & Conclusion</a>
+                                    <a class="nav-link" href="conclusion.html">Future</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#references">References</a>
                                 </li>
 
 
@@ -114,7 +117,15 @@
                         <br><br>
                         Recently apple has developed crash detection system, that can detect car crash based on force during a crash. "Apple said it developed two new motion sensors for Apple Watch Series 8: An improved 3-axis gyroscope and a high g-force accelerometer. These can detect up to 256g force, which Apple said allows it to detect the extreme impact of a crash. These sensors can sample motion up to 4x faster than their predecessors, so Apple Watch Series 8 can sense the precise moment of impact. Apple also built an advanced "sensor fusion" algorithm to enable accurate crash detection. The company studied, for years, vehicle impacts at state-of-the-art crash test labs."<a href="https://www.pocket-lint.com/phones/news/apple/162587-apple-crash-detection-how-does-it-work-iphone-apple-watch-how-to-turn-on">: Source.</a> 
                         <br><br>
-                        In this article we will discuss one solution proposed by Chand et al in [1].
+
+                        Some reasearchers have been researching in field of Computer Vision for accident detection. 
+                        In <a href="index.html#references">[2]</a> Zu Hui proposed Gaussian Mixture Model and mean shift algorithm to detect accidents. Here the vehicles are detected using Gaussian Mixture Model and Mean shift Algorithm tracks the detected vehicles.
+                        Next the position, direction and speed of the vehicles will be used to make recognition of accident.
+
+                        <br><br>
+                        In <a href="index.html#references">[3]</a> unlike previous reasearchthe authors propose analysing the images of damaged cars to detect accidents. This is achieved via binary classifier which differentiates damaged cars as class 1 and undamaged cars as class 2.
+                        <br><br>
+                        In this tutorial we will discuss one solution proposed by Chand et al in <a href="index.html#references">[1]</a>.
 <br>To detect an accident between two cars, we need to consider various parameters as what may look like an accident may not necessarily be an accident and could just be some False positives. Hence the solution to this problem can be broadly classified into 3 steps.
 <br>
 <br>Step 1: Detect Vehicles
