@@ -46,9 +46,9 @@
                  <div class="menu-area">
                     <nav class="navbar navbar-expand-lg ">
                         <!-- <a class="navbar-brand" href="#">Menu</a> -->
-<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                        <i class="fa fa-bars"></i>
-                        </button>
+                        </button> -->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                <li class="nav-item active">
@@ -61,6 +61,36 @@
                                <li class="nav-item" href="#"> -->
       	                        <a class="nav-link" href="quiz.html">QUIZ</a></li>
                                <!-- <li class="last"><a href="#"><img src="images/search-icon.png" alt="icon"></a></li> -->
+                            
+                            
+                                <li class="nav-item">
+                                <a class="nav-link" href="Introduction.html">Introduction</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sensor.html">Sensor</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="related.html">Related Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_detection.html">Vehicle Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_tracking.html">Vehicle Tracking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accident_detection.html">Accident Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="success_failure.html">Success & Failures</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="challenges.html">Challenges</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="conclusion.html">Future & Conclusion</a>
+                                </li>
+
+
                             </ul>
                         </div>
                     </nav>
@@ -80,12 +110,37 @@
                     <!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
                     <h1 class="written_text">Vehicle Detection</h1>
                     <p>
-                        To determine occurrence of a road accident, the system needs to be able to identify the vehicles which is the basic task towards resolving this problem. We will use object detection method to detect the vehicles. Mask Region based Convolutional framework is used for object detection.
+                        To determine occurrence of a road accident, the system needs to be able to identify the vehicles which is the basic task towards resolving this problem. We will use object detection method to detect the vehicles. 
+                        <br><br>
+
+                        <figure>
+                            <img src="https://miro.medium.com/max/1400/1*Ef6QU6hyuyvvqVfl87a1qw.png" class="rounded " alt="..." style="width: 300px; height:300px ">
+                        
+                            <figcaption>Fig.5. Src:<a href="https://towardsdatascience.com/teaching-cars-to-see-vehicle-detection-using-machine-learning-and-computer-vision-54628888079a">Towards Datascience</a> </figcaption>
+                          </figure>
+                        
+                        <br><br>
+                        Mask Region based Convolutional framework is used for object detection.
 
                         <br><br>
-                        <img src="images/image1.jpg" alt="src:" width="500" height="600">
+                        <figure style="align-items:center">
+                            <img src="images/image1.jpg" alt="src" width="500" height="600">
+                            <figcaption style="color: white;">Fig.6 Src: [1]</figcaption>
+                        </figure>
+                        
                         <br><br>
                         Mask R-CNN is a variant of Deep Neural Network to detect objects in images and generate high quality segmentation mask. It was developed on top of Faster R-CNN (Region based convolutional neural network).
+                        <br><br>
+                        Faster R-CNN generates two output ie. Class label and a bounding box whereas Mask R-CNN in addition to class label & bounding box also generates additional mask.
+<br><br>Stage 1: First stage is Region Proposal Network, which proposes candidate object bounding boxes.
+<br>Stage 2: Second stage predicts class, box offset  and a binary mask. It uses ROAlign to locate important areas of feature map.
+
+<br>
+<br>
+Mask Representation: "A mask encodes an input object's spatial layout. Thus, unlike class labels or box offsets that are inevitably collapsed into short output vectors by fully-connected (fc) layers, extracting the spatial structure of masks can be addressed naturally by the pixel-to-pixel correspondence provided by convolutions."
+<br><br>
+RoIAlign: Extraction of a small feature map from Region of Interest. Quantization generates misallignments between RoI & extracted features. Hence RoIAlign was introduced.
+
                         <br><br>
                         In image segmentation, a digital image is partitioned into multiple segments and these segments will be used to locate objects in those images based on their boundaries.
                         <br><br>
@@ -98,7 +153,11 @@
                                 2. Instance Segmentation: It correctly detects all objects in image while correctly segmenting each instance.
                             
                         <br><br>
-                        <img src="images/image2.png" alt="src:" width="600" height="200">
+                        <figure style="align-items:center">
+                            <img src="images/image2.png" alt="src:" width="600" height="200">
+                            <figcaption style="color: white">Fig.7 Src: [1]</figcaption>
+                          </figure>
+                       
                         <br><br>
                         Mask R-CNN generates three outputs for each object, a class label, a bounding box and object mask.
                         <br><br>
@@ -122,15 +181,7 @@
     <br>
 </div>
 
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                   <p class="copyright_text">© 2019 All Rights Reserved. <a href="https://html.design">Free Website Templates</a></p>
-                </div>
-            </div>
-        </div>
-    </div> 
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>

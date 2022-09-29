@@ -46,9 +46,9 @@
                  <div class="menu-area">
                     <nav class="navbar navbar-expand-lg ">
                         <!-- <a class="navbar-brand" href="#">Menu</a> -->
-<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                        <i class="fa fa-bars"></i>
-                        </button>
+                        </button> -->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                <li class="nav-item active">
@@ -61,6 +61,36 @@
                                <li class="nav-item" href="#"> -->
       	                        <a class="nav-link" href="quiz.html">QUIZ</a></li>
                                <!-- <li class="last"><a href="#"><img src="images/search-icon.png" alt="icon"></a></li> -->
+                            
+                            
+                                <li class="nav-item">
+                                <a class="nav-link" href="Introduction.html">Introduction</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sensor.html">Sensor</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="related.html">Related Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_detection.html">Vehicle Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_tracking.html">Vehicle Tracking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accident_detection.html">Accident Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="success_failure.html">Success & Failures</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="challenges.html">Challenges</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="conclusion.html">Future & Conclusion</a>
+                                </li>
+
+
                             </ul>
                         </div>
                     </nav>
@@ -68,6 +98,8 @@
             </div>
         </div> 
     </div>
+
+
     <!-- end header end -->        
     <!--banner start -->
     <div class="banner-main">
@@ -105,205 +137,73 @@
     			<p style="color: #050000; text-align: center;">
                     The rapid increase in usage of vehicles has increased the rate of road accidents. Many drivers unaware of the accident on their route, start to queue up on the lanes. Road accidents can occur for various reasons like drunk drivers, over speeding, road anomalies etc. Instead, if they would have known that there has been an accident on that path, they could then have changed their route to reach their destinations while the emergency help reaches the accident location. So, we are discussing a software system, in which vehicles and surveillance cameras can detect the accident and report it emergency and other drivers who are planning to travel via same location can be intimated. To solve this problem, we will use Computer Vision. We will discuss CNN (computational neural networks) to detect road accidents in this tutorial.
                     <br><br>
-                    Please click on each of the below topics to learn more about it.
+                    Please click on each of the topics on the Menu to learn more about it.
+                    <br>
+                    <figure style="align-items:center">
+                        <img src="./images/car1.jpg" class="rounded mx-auto d-block" alt="..." style="width: 600px; height:400px ">
+                        <figcaption style="color: black; text-align: center;">Fig.1.</figcaption>
+                      </figure>
+                    
                 </p>
     			<!-- <div class="btn_main">
     			    <button type="button" class="btn btn-dark btn-lg">Get started</button>
     		    </div> -->
     		</div>
     		    <div class="section_service_2">
-    		    	<h1 class="service_text">Table of Contents</h1>
+    		    	<h1 class="service_text"></h1>
     		    </div>
     		    <div class="service_main">
     		    	<div class="container">
     		    		<div class="row">
-    		    			<div class="col-md-12" data-toggle="collapse" data-target="#intro">
+    		    			<div class="col-md-12" >
     		    				<div class="written_text">
-    		    					<!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
-    		    					<h1 class="written_text">Introduction and Problem Definition: </h1>
-    		    					<!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
-    		    				</div>
-    		    			</div>
-                            <div id="intro" class="collapse">
-                                <p>
-                                    In case of any accident, the road gets blocked causing traffic jam. This traffic can delay the emergency help from reaching the location as well as delay other drivers on that route. To avoid traffic delays, road accidents need to be reported to emergency as well other riders on that path. Today most of the roads have surveillance cameras installed and many new vehicles have cameras installed on them which record the traffic around them. In this discussion, we will have a look at road accidents caused between two cars and how they can be detected using computer vision.
-                                </p>
-
-                            </div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-    		    <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12" data-toggle="collapse" data-target="#sensor">
-    		    				<div class="written_text">
-    		    					<!-- <div class="like_icon"><img src="images/design-icon.png"></div> -->
-    		    					<h1 class="written_text">Sensor Possibilities: </h1>
-    		    					<!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
-    		    				</div>
-    		    			</div>
-                            <div id="sensor" class="collapse">
-                                <p>
-                                    Input to the system can be from grayscale surveillance cameras and car cameras. 
-                                </p>
-
-                            </div>
-
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-                                    <a href="solution.html" role="button">
-                                        <h1 class="written_text">
-                                            Proposed Solution
-                                        </h1>
-                                        
-                                    </a>
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-    		    					<!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
-   
-                                     <a href="vehicle_detection.html" role="button">
-                                        <h1 class="written_text">
-                                            Vehicle detection
-                                        </h1>
-                                        
-                                    </a>
-                                        
-                                    
     		    					
-    		    					<!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
+    		    					<!-- <h1 class="written_text">Introduction and Problem Definition: </h1> -->
+    		    					
     		    				</div>
     		    			</div>
+                            
     
     		    		</div>
     		    	</div>
     		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-    		    					<a href="vehicle_tracking.html" role="button">
-                                        <h1 class="written_text">
-                                            Vehicle tracking
-                                        </h1>
-                                        
-                                    </a>
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-                                    <a href="accident_detection.html" role="button">
-                                        <h1 class="written_text">
-                                            Accident detection
-                                        </h1>
-                                        
-                                    </a>
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-    		    					<!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
-    		    					<h1 class="written_text">Success and Failures</h1>
-    		    					<!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-    		    					<!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
-    		    					<h1 class="written_text">Challenges</h1>
-    		    					<!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p> -->
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
-
-                <div class="service_main">
-    		    	<div class="container">
-    		    		<div class="row">
-    		    			<div class="col-md-12">
-    		    				<div class="written_text">
-                                    <a href="conclusion.html" role="button">
-                                        <h1 class="written_text">
-                                            The future & conclusions
-                                        </h1>
-                                        
-                                    </a>
-    		    				</div>
-    		    			</div>
-    
-    		    		</div>
-    		    	</div>
-    		    </div>
+    		   
 
                 
     	</div>
         
 	</div>
 
+<div>
+
+    
+
+
+</div>
+
 <div class="services_main">
     <div class="container">
         <div class="creative_taital">
         <br><br><br>
-        <h1 class="service_text">References</h1>
+        <a id="references"> <h1 class="service_text">References</h1> </a>
+        
         <p style="color: #050000">
             [1] Dhananjai Chand, Savyasachi Gupta, Goutham K, “Computer Vision-based Accident Detection in Traffic Surveillance”, 10th ICCCNT, 2019. 
             <a class = "external" style="color: #1770cf" href="https://ieeexplore.ieee.org/document/8944469">IEEE Xplore <i class="fa fa-external-link"></i></a>
-            <br>
+            <br><br>
             [2] Z. Hui, X. Yaohua, M. Lu, and F. Jiansheng, “Vision-based real-time traffic accident detection,” in Proc. of World Congress on Intelligent Control and Automation, June 2014. 
             <a class = "external" style="color: #1770cf" href="https://ieeexplore.ieee.org/document/7052859">IEEE Xplore <i class="fa fa-external-link"></i></a>
-            <br>
+            <br><br>
             [3] Vaishnavi Ravindran, Lavanya Viswanathan, Dr. Shanta Rangaswamy, “A Novel Approach to Automatic Road-Accident Detection using Machine Vision Techniques”, International Journal of Advanced Computer Science and Applications, 2016.
             <a class = "external" style="color: #1770cf" href="https://pdfs.semanticscholar.org/abf3/ff1dbf66f2d9dd2737650869c5537cfcd0fb.pdf?_ga=2.172199776.2141503375.1662409880-1411934195.1662409880">Semantic Scholar <i class="fa fa-external-link"></i></a>
-            <br>
+            <br><br>
             [4] Elisha Odemakinde, “Everything about Mask R-CNN: A Begineer's Guide”.
             <a class = "external" style="color: #1770cf" href="https://viso.ai/deep-learning/mask-r-cnn/">Visio.ai <i class="fa fa-external-link"></i></a>
-
+            <br><br>
+            [5] Kaiming He, Georgia Gkioxari, Piotr Dollar ,Ross Girshick, "Mask R-CNN", Facebook AI Research.
+            <a class = "external" style="color: #1770cf" href="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.8562-6/240856874_571530530542891_4231366922854549654_n.pdf?_nc_cat=102&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=8rjtjsM51tUAX83KbMe&_nc_ht=scontent-sjc3-1.xx&oh=00_AT8q0aN5Z9w6ezyOggU4HsbhdQB7JGUemrZqi2qvJkrC2A&oe=633AD975"> <i class="fa fa-external-link"></i></a>
+            
+            <br><br>
         </p>
         </div>
     </div>  
@@ -313,15 +213,7 @@
    
 
     
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                   <p class="copyright_text"></p>
-                </div>
-            </div>
-        </div>
-    </div>
+   
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>

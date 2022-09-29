@@ -46,9 +46,9 @@
                  <div class="menu-area">
                     <nav class="navbar navbar-expand-lg ">
                         <!-- <a class="navbar-brand" href="#">Menu</a> -->
-<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                        <i class="fa fa-bars"></i>
-                        </button>
+                        </button> -->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                <li class="nav-item active">
@@ -61,6 +61,36 @@
                                <li class="nav-item" href="#"> -->
       	                        <a class="nav-link" href="quiz.html">QUIZ</a></li>
                                <!-- <li class="last"><a href="#"><img src="images/search-icon.png" alt="icon"></a></li> -->
+                            
+                            
+                                <li class="nav-item">
+                                <a class="nav-link" href="Introduction.html">Introduction</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sensor.html">Sensor</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="related.html">Related Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_detection.html">Vehicle Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vehicle_tracking.html">Vehicle Tracking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accident_detection.html">Accident Detection</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="success_failure.html">Success & Failures</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="challenges.html">Challenges</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="conclusion.html">Future & Conclusion</a>
+                                </li>
+
+
                             </ul>
                         </div>
                     </nav>
@@ -83,6 +113,13 @@
                         We need to track vehicles to understand the accidents possibility. Among all the objects detected, we retain only the correctly detected vehicles. This can be achieved by evaluating the class ids and scores from the previous step. Post identifying the vehicles in video frames, we use Centroid Tracking algorithm to track the vehicles in each subsequent video frames.
                     <br><br>
                     Centroid Tracking algorithm is based on Euclidean distance between centroids of two objects, which is our system are vehicles.
+                    <br>
+                    <br>
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/3d-function-5.svg/200px-3d-function-5.svg.png" class="rounded " alt="..." style="width: 300px; height:300px ">
+                    
+                        <figcaption>Fig.8. Src:<a href="https://en.wikipedia.org/wiki/Euclidean_distance">Wikipedia</a> </figcaption>
+                      </figure>
                     <br><br>
                     1.  The Centroid is determined by identifying the intersection point of the lines passing from midpoint of the boundary box that was generated in Step 1.
                     <br>
@@ -93,17 +130,18 @@
                     4.	 Incase previously identified vehicles are no longer in the frame, then remove the from the set and if there are new vehicles in the frame, then add them to our object set.
                     <br><br>
                     This distance between two objects will be used to predict the accidents between those two vehicles. This prediction depends on:
-                    <br>
+                    <br><br>
                     1.	Overlapping bounding boxes of vehicles: Before any collision between two vehicles, there are high chances that their bounding boxes will overlap. This can give some probability but doesn’t confirm that it is a collision as every overlap need not be a collision.
                     <br>“Consider a, b to be the bounding boxes of two vehicles A and B. Let x, y be the coordinates of the centroid of a given vehicle and let α, β be the width and height of the bounding box of a vehicle respectively. At any given instance, the bounding boxes of A and B overlap, if the condition shown in Eq. 1 holds true”. 
+                    <a href="index.html#references">[1]</a>
                     <br>
                     <img src="images/eq1.png" alt="src:" width="600" height="50">
-                    <br>
+                    <br><br>
                     2.	Trajectory of the vehicles and their angle of intersection: This is determined by measuring the difference between the centroid of the vehicles in each video frame which generates a 2D vector.
                     “ We then determine the magnitude of the vector, µ, as shown in Eq. 2.”
                     <br>
                     <img src="images/eq2.png" alt="src:" width="600" height="50">
-                    <br>
+                    <br><br>
                     The angle of intersection for two vectors μ_1 and μ_2 of two vehicles using Eq. 3
                     <br>
                     <img src="images/eq3.png" alt="src:" width="600" height="50">
@@ -111,7 +149,7 @@
                     3.	Change in speed of the vehicles: We calculate the speed of the vehicles using Eq. 4
                     <br>
                     <img src="images/eq4.png" alt="src:" width="600" height="50">
-                    <br> 
+                    <br> <br>
                     where c2 and c1 are centroids of the vehicles in subsequent frames and the Interval is the time.
                     <br> 
                     </p>
@@ -128,15 +166,7 @@
     <br>
 </div>
 
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                   <p class="copyright_text">© 2019 All Rights Reserved. <a href="https://html.design">Free Website Templates</a></p>
-                </div>
-            </div>
-        </div>
-    </div> 
+    
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>

@@ -612,7 +612,7 @@ button.main_bt {
 }
 
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
-    width: 62px;
+    width: 10px;
     height: 60px;
     background: #fffdfd;
     opacity: 1;
